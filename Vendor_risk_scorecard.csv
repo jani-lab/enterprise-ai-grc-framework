@@ -1,0 +1,7 @@
+Risk_ID,NIST_RMF_Function,Security_and_Privacy_Check,Vendor_Finding,Risk_Rating,Required_Control
+R-01,Govern,Independent Security Audit,Holds SOC 2 Type II cetification and AES-256 encryption.,Low,Verify current SOC 2 Type II report annually before renewal.
+R-02,Map,AI Model Training on Customer Data,Free/Pro tiers may train AI models on call audio unless opted out; Enterprise tier restricts training.,High,Block Free/Pro accounts on work devices; require Enterprise plan with contractual opt-out.
+R-03,Map,Data Residency & Cloud Hosting,Hosted on AWS servers in the western United States.,Low,Approved for US operations; restrict use for EU/GDPR-regulated client calls.
+R-04,Measure,Regulated Data (HIPAA/PII),HIPAA compliance and BAA are gated strictly behind the Enterprise tier.,High,"Ban recording patient, SSN, or payment card discussions until Enterprise BAA is signed."
+R-05,Manage,Data Retention & Deletion Controls,Custom data retention policies are only available on Enterprise plans.,Medium,Configure automated 30-day transcript deletion in admin settings.
+R-06,Govern,Access & Identity Management,"Enterprise supports SSO/SAML, SCIM provisioning, and audit trails.",Medium,Enforce company SSO so acccess revokes automatically when an employee leaves.
